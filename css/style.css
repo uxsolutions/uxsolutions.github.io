@@ -3,13 +3,76 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
-
-.header-logo {
-    width: 50px;
-    height: 50px;
-    margin-top: -10px;
-}
-
 .large-icon {
     font-size: 100px;
+}
+
+nav.navbar {
+    background-color: #1d98c4;
+    border-color: #1d8cb3;
+}
+
+nav.navbar .navbar-brand,
+nav.navbar .navbar-nav > li > a {
+    color: white;
+}
+
+nav.navbar .navbar-nav>.open>a,
+nav.navbar .navbar-nav>.open>a:focus,
+nav.navbar .navbar-nav>.open>a:hover {
+    background: radial-gradient(100% 30px at center top, #88e0cc 0%, #1d98c4 50%);
+}
+
+.jumbotron {
+    background: linear-gradient(180deg, #1d98c4 0,#88e0cc 100%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.jumbotron h1 .header-logo {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.jumbotron .container {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 35px;
+    position: relative;
+    width: 100%;
+}
+
+.jumbotron h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    text-align: center;
+    font-weight: 800;
+    background: rgba(255, 255, 255, .8);
+    margin: 0;
+    padding: 10px;
+    color: black;
+}
+
+.ux-design-img {
+    max-height: 300px;
+    margin: auto;
+}
+
+.jumbotron:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../images/pattern.png) repeat center center;
+    opacity: .8;
 }
